@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Html Demo</title>
+    <style>
+      .testDiv {
+        color: red;
+        border: medium solid brown;
+      }
+    </style>
+    <script>
+      function changeFontSize() {
+        let body = document.getElementsByTagName("body")[0];
+        let currentFont = body.style.fontSize;
+        console.log("currentFont -> ", currentFont);
+        body.style.fontSize = "50px";
+      }
+    </script>
+  </head>
+  <body>
+
+
+    <div id="firstDiv"> I am first Div</div>
+
+    <!-- Opening tag content closing tag -->
+
+    <h1>I am Heading 1</h1>
+
+    <form action="">
+      <!-- required = Single valued attribute -->
+      <input type="text" name="username" required />
+      <!-- type="email" :: Key Valued attribute -->
+      <input type="email" name="email" required />
+      <input type="submit" name="Submit Form" id="" />
+    </form>
+
+    <br />
+    <br />
+    <div class="testDiv">I am HTML element with attributes</div>
+
+    <br />
+
+    <div>This is my first HTML File.</div>
+    <span>And i am span element!</span>
+    <p>Lets begin the show!!!</p>
+    <button onclick="changeFontSize()">Change the font size</button>
+  </body>
+</html>
